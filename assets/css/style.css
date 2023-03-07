@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #333333;
+  --second-color: #4f4f4f;
+  --copy--colorL: #bdbdbd;
+  --font-primary: "Space Mono", monospace;
+  --second-primary: "Inconsolata", monospace;
+  --third-primary: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  color: var(--primary-color);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 4rem;
+}
+
+header h3 {
+  font-family: var(--second-primary);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+main {
+  padding: 16rem 0;
+}
+
+main .container {
+  gap: 12rem;
+  flex-wrap: wrap;
+}
+
+.main-image {
+  width: 54rem;
+}
+
+.main-text--title h1 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 9.5rem;
+  letter-spacing: -0.035em;
+}
+
+.main-text--body p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  letter-spacing: -0.035em;
+  color: var(--second-color);
+
+  max-width: 38rem;
+  margin-top: 3.6rem;
+  margin-bottom: 6.4rem;
+}
+
+.main-text--button a {
+  display: inline-block;
+  padding: 2.4rem 4.4rem;
+  background-color: var(--primary-color);
+  color: #fff;
+
+  font-family: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+footer p {
+  text-align: center;
+  font-family: var(--third-primary);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: var(--copy--colorL);
+}
