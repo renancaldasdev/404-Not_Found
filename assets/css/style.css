@@ -56,7 +56,6 @@ main {
 
 main .container {
   gap: 12rem;
-  flex-wrap: wrap;
 }
 
 .main-image {
@@ -96,6 +95,7 @@ main .container {
   line-height: 2.1rem;
   letter-spacing: -0.035em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 footer p {
@@ -105,4 +105,37 @@ footer p {
   font-size: 1.4rem;
   line-height: 1.7rem;
   color: var(--copy--colorL);
+  padding: 20px 0;
+}
+
+/* responsividade */
+
+@media (max-width: 1000px) {
+  .container {
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 20px 24px;
+  }
+
+  main {
+    padding-top: 6.4rem;
+  }
+
+  main .container {
+    gap: 6rem;
+    flex-direction: column;
+  }
+  .main-image {
+    width: 28.6rem;
+  }
+  .main-text--title h1 {
+    font-size: 4.8rem;
+    line-height: 7rem;
+  }
 }
