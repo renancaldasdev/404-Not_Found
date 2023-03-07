@@ -114,7 +114,6 @@ footer p {
   .container {
     flex-wrap: wrap;
     padding: 20px;
-    justify-content: center;
   }
 }
 
